@@ -14,6 +14,7 @@
 		AC543C60241617C800BF7368 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC543C5F241617C800BF7368 /* InterfaceController.swift */; };
 		AC543C62241617C800BF7368 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC543C61241617C800BF7368 /* ExtensionDelegate.swift */; };
 		AC543C64241617C900BF7368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC543C63241617C900BF7368 /* Assets.xcassets */; };
+		AC5DE78D24165E8000FE0EBE /* Array+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5DE78C24165E8000FE0EBE /* Array+Shuffle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		AC543C61241617C800BF7368 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		AC543C63241617C900BF7368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC543C65241617CA00BF7368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5DE78C24165E8000FE0EBE /* Array+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Shuffle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				AC543C5F241617C800BF7368 /* InterfaceController.swift */,
+				AC5DE78C24165E8000FE0EBE /* Array+Shuffle.swift */,
 				AC543C61241617C800BF7368 /* ExtensionDelegate.swift */,
 				AC543C63241617C900BF7368 /* Assets.xcassets */,
 				AC543C65241617CA00BF7368 /* Info.plist */,
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC543C62241617C800BF7368 /* ExtensionDelegate.swift in Sources */,
+				AC5DE78D24165E8000FE0EBE /* Array+Shuffle.swift in Sources */,
 				AC543C60241617C800BF7368 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

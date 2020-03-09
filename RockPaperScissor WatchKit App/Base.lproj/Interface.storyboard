@@ -11,23 +11,26 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RockPaperScissor_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <label alignment="center" hidden="YES" text="You win!" id="ji9-sR-WzT">
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
                         <imageView width="0.5" height="0.5" alignment="center" id="pxj-Tn-lad"/>
                         <separator alignment="left" id="vvp-wQ-9ju"/>
-                        <group width="1" height="0.28000000000000003" alignment="left" id="FGc-Cm-gL8">
+                        <group width="1" height="0.33000000000000002" alignment="center" id="FGc-Cm-gL8">
                             <items>
-                                <button width="0.33000000000000002" alignment="left" title="Button" id="DVj-4T-962">
+                                <button width="0.33000000000000002" height="1" alignment="left" title=" " id="DVj-4T-962">
                                     <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="rockAction" destination="AgC-eL-Hgc" id="ULv-0i-Mji"/>
                                     </connections>
                                 </button>
-                                <button width="0.33000000000000002" alignment="left" title="Button" id="XK3-2A-GNJ">
+                                <button width="0.33000000000000002" height="1" alignment="left" title=" " id="XK3-2A-GNJ">
                                     <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="paperAction" destination="AgC-eL-Hgc" id="ubv-oO-adK"/>
                                     </connections>
                                 </button>
-                                <button width="0.33000000000000002" alignment="left" title="Button" id="ftM-wS-yyV">
+                                <button width="0.33000000000000002" height="1" alignment="left" title=" " id="ftM-wS-yyV">
                                     <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="scissorAction" destination="AgC-eL-Hgc" id="kow-Qo-ApL"/>
@@ -49,6 +52,7 @@
                         <outlet property="levelCounterLabel" destination="Bpk-UF-JqC" id="Qdp-tJ-F2c"/>
                         <outlet property="paperButton" destination="XK3-2A-GNJ" id="YHB-gy-TSW"/>
                         <outlet property="questionImage" destination="pxj-Tn-lad" id="SkI-Ev-Bme"/>
+                        <outlet property="resultLabel" destination="ji9-sR-WzT" id="yU6-1V-zLE"/>
                         <outlet property="rockButton" destination="DVj-4T-962" id="eBD-uR-Jgw"/>
                         <outlet property="scissorsButton" destination="ftM-wS-yyV" id="Wa5-zq-4iR"/>
                         <outlet property="timer" destination="WWU-XO-1cs" id="Qcv-ny-H75"/>
