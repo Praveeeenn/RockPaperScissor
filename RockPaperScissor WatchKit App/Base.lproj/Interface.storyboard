@@ -1,15 +1,61 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RockPaperScissor_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="0.5" height="0.5" alignment="center" id="pxj-Tn-lad"/>
+                        <separator alignment="left" id="vvp-wQ-9ju"/>
+                        <group width="1" height="0.28000000000000003" alignment="left" id="FGc-Cm-gL8">
+                            <items>
+                                <button width="0.33000000000000002" alignment="left" title="Button" id="DVj-4T-962">
+                                    <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="rockAction" destination="AgC-eL-Hgc" id="ULv-0i-Mji"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" alignment="left" title="Button" id="XK3-2A-GNJ">
+                                    <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="paperAction" destination="AgC-eL-Hgc" id="ubv-oO-adK"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" alignment="left" title="Button" id="ftM-wS-yyV">
+                                    <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="scissorAction" destination="AgC-eL-Hgc" id="kow-Qo-ApL"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="0.90000000000000002" height="0.33000000000000002" alignment="center" id="ueT-C0-7zk">
+                            <items>
+                                <label alignment="left" text="1/20" id="Bpk-UF-JqC"/>
+                                <timer alignment="right" id="WWU-XO-1cs">
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="answerGroup" destination="ueT-C0-7zk" id="MPy-xh-mq0"/>
+                        <outlet property="levelCounterLabel" destination="Bpk-UF-JqC" id="Qdp-tJ-F2c"/>
+                        <outlet property="paperButton" destination="XK3-2A-GNJ" id="YHB-gy-TSW"/>
+                        <outlet property="questionImage" destination="pxj-Tn-lad" id="SkI-Ev-Bme"/>
+                        <outlet property="rockButton" destination="DVj-4T-962" id="eBD-uR-Jgw"/>
+                        <outlet property="scissorsButton" destination="ftM-wS-yyV" id="Wa5-zq-4iR"/>
+                        <outlet property="timer" destination="WWU-XO-1cs" id="Qcv-ny-H75"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="32" y="49"/>
         </scene>
     </scenes>
 </document>

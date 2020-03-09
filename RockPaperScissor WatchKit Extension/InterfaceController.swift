@@ -11,10 +11,21 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    @IBOutlet weak var questionImage: WKInterfaceImage!
+    @IBOutlet weak var answerGroup: WKInterfaceGroup!
+    @IBOutlet weak var rockButton: WKInterfaceButton!
+    @IBOutlet weak var paperButton: WKInterfaceButton!
+    @IBOutlet weak var scissorsButton: WKInterfaceButton!
+    @IBOutlet weak var levelCounterLabel: WKInterfaceLabel!
+    @IBOutlet weak var timer: WKInterfaceTimer!
+    
+    
+    var allMoves = ["rock", "paper", "scissors"]
+    var shouldWin = true
+    var level = 1
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
         // Configure interface objects here.
     }
     
@@ -28,4 +39,16 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func rockAction() {
+        print("Rockaction")
+    }
+    
+    @IBAction func paperAction() {
+        print("PaperAction")
+    }
+    
+    @IBAction func scissorAction() {
+        print("scissorAction")
+    }
+    
 }
